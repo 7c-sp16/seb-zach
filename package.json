@@ -4,7 +4,7 @@
   "description": "Persisting data using MongoDB and Mongoose",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha listing.model.test.js"
   },
   "author": "Medhir Bhargava",
   "license": "MIT",
