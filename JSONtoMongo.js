@@ -20,6 +20,8 @@ mongoose.connect(config.db.uri);
 fs.readFile('listings.json', 'utf8', function(err, data){
   if(err) throw err;
   data = JSON.parse(data);
+
+  console.log("Added following entries to MongoDB");
   
   for(var i=0; i<data.entries.length; i++){
     console.log(data.entries[i].name);
@@ -49,8 +51,7 @@ fs.readFile('listings.json', 'utf8', function(err, data){
         if(err) throw err;
       });
     }
-  }
-  
+  } 
 });
 
 
